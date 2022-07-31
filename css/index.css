@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+}
+
+/*  navbar section */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+
+}
+
+nav img{
+    width: 100px;
+}
+
+.nav-items{
+    display: flex;
+   
+}
+.nav-item{
+    font-size: 15px;
+    padding: 1rem 1rem;
+    color: #353d80;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.signin-btn{
+    padding: 4px 12px;
+    background: linear-gradient( to left,#ff8adc 30%, #965cf2);
+    border: none;
+    border-radius: 12px;
+    color: white;
+
+    
+}
+
+/*   Middle hero section   */
+
+.intro-section{
+ 
+}
+
+.left-section{
+    margin-left: 9rem;
+    margin-top: 7rem;
+}
+
+h1{
+    font-size:70px;
+    color: #3e4794;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4{
+    margin-top: 3rem;
+    font-size: 14px;
+    width: 20em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.learn-more-btn{
+    font-weight: 700;
+    margin-top: 3rem;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 24px;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient( to left,#ff8adc 10%, #965cf2);
+}
+
+
+
+/* Right section */
+
+.imgs-div{
+    
+}
+
+.vector-img{
+   
+    position: relative;
+    width: 90px;
+    top: 62px;
+    left: 600px;
+}
+.vector-dot{
+    position: relative;
+    top: -10px;
+    left: 552px;
+
+}
+
+[alt="intro-img"]{
+    right: 68px;
+    position: absolute;
+    top: 80px;
+}
+
+.backcover{
+    position:absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: auto;
+
+}
+
+
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+        
+
+    }
+
+    nav img{
+        display: none;
+        
+    }
+
+    .nav-items{
+        flex-direction: column;
+        align-items: start;
+        background: linear-gradient( to left,#ff8adc 10%, #965cf2);
+        width: 100%;
+    }
+
+    
+[alt="intro-img"]{
+    display:none;
+
+}
+
+.backcover ,.vector-dot ,.vector-img,.signin-btn{
+    display:none;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 10px;
+}
+
+.intro-section{
+    flex-direction:column;
+    padding: 0rem;
+    align-items: center;
+}
+
+
+
+
+}
